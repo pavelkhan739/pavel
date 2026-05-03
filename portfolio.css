@@ -570,6 +570,7 @@ footer .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        margin-left: 70px;
     }
 
     #resume .resume-container {
