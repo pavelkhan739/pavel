@@ -554,6 +554,7 @@ footer .footer-container {
     #resume .resume-container,
     nav,
     #banner {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
