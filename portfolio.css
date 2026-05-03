@@ -15,7 +15,6 @@
     font-weight: 900;
 
 }
-
 .color-orange {
     color: #FD6E0A
 }
@@ -544,17 +543,69 @@ footer .footer-container {
     }
 
 }
+/* Tablet Layout (min-width: 577px to max-width: 1024px) */
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
 
-/* device specific media query  */
-@media screen and (min-width:576px) and (max-width:992px) {
-
-    #skills .skills-container .skill-box,
-    #about .about-container .about-info,
-    footer .footer-container,
-    #resume .resume-container,
-    nav,
     #banner {
+        margin: 40px;
+        flex-direction: row;
+        gap: 30px;
+        text-align: left;
+    }
+
+    #banner .banner-image img {
+        width: 100%;
+    }
+
+    #about .about-container .about-info {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    #skills .skills-container .skill-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    #resume .resume-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    footer .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+/* Desktop Layout (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+    .container {
+        width: 80%;
+    }
+
+    #about .about-container .about-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    #resume .resume-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    footer .footer-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
     }
 }
